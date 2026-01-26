@@ -1,0 +1,46 @@
+{
+  "speakers": [
+    {
+      "id": "barbara-forbes",
+      "name": "Barbara Forbes",
+      "title": "Azure Architect @ Zure | Azure MVP | GitHub Star",
+      "bio": "Barbara Forbes is an Azure Architect & consultant at Zure in the Netherlands, a Microsoft Azure MVP, Microsoft Certified Trainer (MCT), and a GitHub Star. She works at the intersection of technology, strategy, education, and development. Her focus is on the Microsoft Cloud Adoption Framework, Generative AI, Infrastructure as Code, PowerShell, and GitHub.",
+      "photo": "https://sessionize.com/image/6939-200o200o2-4HzpJWG1Qpx8UKbt4xJRzr.jpg"
+    },
+    {
+      "id": "geert-van-der-cruijsen",
+      "name": "Geert van der Cruijsen",
+      "title": "CEO Zure Netherlands",
+      "bio": "Geert van der Cruijsen is the CEO of Zure Netherlands, helping companies improve how they build software by combining strong engineering culture with modern technology. He focuses on DevOps, cloud-native development, architecture and AI, enabling teams to work more autonomously and deliver faster through smart platforms and better ways of working.",
+      "photo": "https://sessionize.com/image/dfd9-200o200o2-JXXeFuFmNbuqSi4jDbcx7i.jpg"
+    },
+    {
+      "id": "rik-hepworth",
+      "name": "Rik Hepworth",
+      "title": "Founder and CEO, Zure UK | Azure MVP | Microsoft Regional Director",
+      "bio": "Rik helps organisations use Cloud better as CEO and co-founder of Zure UK. Whether that is a new adoption where governance and management are key, or an application modernisation project where technology choice and team knowledge are important factors in success.",
+      "photo": "https://sessionize.com/image/02ce-200o200o2-K681tmuiJ9Be2QkUG9D37.jpg"
+    },
+    {
+      "id": "jan-de-vries",
+      "name": "Jan de Vries",
+      "title": "Principal Azure and AI Architect at Zure",
+      "bio": "I'm a passionate engineer, with over 20 years of experience designing and delivering innovative solutions. My regular work centers on building reliable, scalable systems in Microsoft Azure and creating GenAI-powered solutions.",
+      "photo": "https://sessionize.com/image/ee27-200o200o2-EhpcSv2qb58XNZUjhHVnZw.jpg"
+    },
+    {
+      "id": "pasi-huuhka",
+      "name": "Pasi Huuhka",
+      "title": "DevOps Architect at Zure | DevTech MVP",
+      "bio": "Pasi Huuhka is a Microsoft Azure MVP with a background spanning DevOps, full stack software development, architecture, and systems administration. Since 2013, he's worked hands-on with a broad range of Azure's platform-native, container-based and serverless offerings.",
+      "photo": "https://sessionize.com/image/b001-200o200o2-NAkknZLCRnWd9yVZdiZctd.jpg"
+    },
+    {
+      "id": "glenn-colpaert",
+      "name": "Glenn Colpaert",
+      "title": "CTO at Zure Belgium | Azure MVP",
+      "bio": "Glenn Colpaert is co-founder and CTO at Zure Belgium. He is a Microsoft Azure MVP since 2014 and is a frequent speaker at national and international events. Currently, he's mainly focused on designing and building secure, scalable cloud-based solutions on Microsoft Azure.",
+      "photo": "https://sessionize.com/image/01b9-200o200o2-psZoLJNUkYk7aKtXjGeLZD.jpg"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "speakers": [
+    {
+      "id": "barbara-forbes",
+      "name": "Barbara Forbes",
+      "title": "Azure Architect @ Zure | Azure MVP | GitHub Star",
+      "bio": "Barbara Forbes is an Azure Architect & consultant at Zure in the Netherlands, a Microsoft Azure MVP, Microsoft Certified Trainer (MCT), and a GitHub Star. She works at the intersection of technology, strategy, education, and development. Her focus is on the Microsoft Cloud Adoption Framework, Generative AI, Infrastructure as Code, PowerShell, and GitHub.",
+      "photo": "https://sessionize.com/image/6939-200o200o2-4HzpJWG1Qpx8UKbt4xJRzr.jpg"
+    },
+    {
+      "id": "geert-van-der-cruijsen",
+      "name": "Geert van der Cruijsen",
+      "title": "CEO Zure Netherlands",
+      "bio": "Geert van der Cruijsen is the CEO of Zure Netherlands, helping companies improve how they build software by combining strong engineering culture with modern technology. He focuses on DevOps, cloud-native development, architecture and AI, enabling teams to work more autonomously and deliver faster through smart platforms and better ways of working.",
+      "photo": "https://sessionize.com/image/dfd9-200o200o2-JXXeFuFmNbuqSi4jDbcx7i.jpg"
+    },
+    {
+      "id": "rik-hepworth",
+      "name": "Rik Hepworth",
+      "title": "Founder and CEO, Zure UK | Azure MVP | Microsoft Regional Director",
+      "bio": "Rik helps organisations use Cloud better as CEO and co-founder of Zure UK. Whether that is a new adoption where governance and management are key, or an application modernisation project where technology choice and team knowledge are important factors in success.",
+      "photo": "https://sessionize.com/image/02ce-200o200o2-K681tmuiJ9Be2QkUG9D37.jpg"
+    },
+    {
+      "id": "jan-de-vries",
+      "name": "Jan de Vries",
+      "title": "Principal Azure and AI Architect at Zure",
+      "bio": "I'm a passionate engineer, with over 20 years of experience designing and delivering innovative solutions. My regular work centers on building reliable, scalable systems in Microsoft Azure and creating GenAI-powered solutions.",
+      "photo": "https://sessionize.com/image/ee27-200o200o2-EhpcSv2qb58XNZUjhHVnZw.jpg"
+    },
+    {
+      "id": "pasi-huuhka",
+      "name": "Pasi Huuhka",
+      "title": "DevOps Architect at Zure | DevTech MVP",
+      "bio": "Pasi Huuhka is a Microsoft Azure MVP with a background spanning DevOps, full stack software development, architecture, and systems administration. Since 2013, he's worked hands-on with a broad range of Azure's platform-native, container-based and serverless offerings.",
+      "photo": "https://sessionize.com/image/b001-200o200o2-NAkknZLCRnWd9yVZdiZctd.jpg"
+    },
+    {
+      "id": "glenn-colpaert",
+      "name": "Glenn Colpaert",
+      "title": "CTO at Zure Belgium | Azure MVP",
+      "bio": "Glenn Colpaert is co-founder and CTO at Zure Belgium. He is a Microsoft Azure MVP since 2014 and is a frequent speaker at national and international events. Currently, he's mainly focused on designing and building secure, scalable cloud-based solutions on Microsoft Azure.",
+      "photo": "https://sessionize.com/image/01b9-200o200o2-psZoLJNUkYk7aKtXjGeLZD.jpg"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "multi-agent-workflows-n8n",
+      "title": "Building Multi agent workflows using N8N & Azure",
+      "abstract": "N8N is an open source workflow tool that you can run locally, in your own cloud or as a SaaS solution. It makes it really easy to build workflows with many integrations. AI agents are a core concept in these workflows. This session is covered with hands on demos of building your own multi agent workflows, connecting to MCP servers, using LLMs in Azure and all without writing any actual code.",
+      "speakerIds": ["geert-van-der-cruijsen"]
+    },
+    {
+      "id": "developers-quest-ai",
+      "title": "The Developers Quest: Staying relevant in the world of AI Development Agents",
+      "abstract": "AI development agents are becoming more capable every day, and many developers are starting to wonder what that means for their future. In this session, we go on a developer's quest to stay relevant in a world where AI can write code, review pull requests, and even reason about solutions. This is an honest look at the challenges ahead and an invitation to rethink our role.",
+      "speakerIds": ["geert-van-der-cruijsen"]
+    },
+    {
+      "id": "opencode-coding-agent",
+      "title": "OpenCode: an open source coding agent with sovereignty in mind",
+      "abstract": "OpenCode is a fully open source AI coding agent that works in your terminal, IDE, or desktop and lets you use any model you choose, including local models or cloud models from GitHub, Azure, and others. OpenCode does not store your code or context by default and is not tied to a single provider. In this session we'll show how developers can use OpenCode to have agents help design and build applications while keeping control over their data and tooling.",
+      "speakerIds": ["geert-van-der-cruijsen"]
+    },
+    {
+      "id": "model-context-protocol",
+      "title": "Connecting AI agents to your systems using the Model Context Protocol",
+      "abstract": "The Model Context Protocol (MCP) is a new open standard to connect AI agents with external tools and data. It makes it possible for agents in your applications or in your development process to work with APIs, databases, and services in a structured way. We will show step by step how to build your own MCP server using .NET and C#, so you can bring custom functionality into your own AI agents.",
+      "speakerIds": ["geert-van-der-cruijsen"]
+    },
+    {
+      "id": "platform-engineering-workshop",
+      "title": "Build a cloud native engineering platform in a day",
+      "abstract": "Building and running software in the cloud can overwhelm developers with many tools and settings. Platform engineering fixes this by giving teams one open-source, cloud native platform that hides the hard parts and offers ready-made golden paths. In this full-day workshop you will build such a platform with CNCF projects, GitOps with Argo CD, and Backstage templates.",
+      "speakerIds": ["geert-van-der-cruijsen", "pasi-huuhka"]
+    },
+    {
+      "id": "sovereign-cloud-azure",
+      "title": "Sovereign cloud on Azure: reducing risk and staying in control",
+      "abstract": "Governments and organisations across Europe are questioning how to use hyperscalers like Azure while staying compliant and in control. This session looks at legal and technical challenges of using US-based cloud providers in the EU. We will cover Azure capabilities like confidential computing, customer-managed keys and sovereign landing zones.",
+      "speakerIds": ["geert-van-der-cruijsen"]
+    },
+    {
+      "id": "ai-agents-mcp-semantic-kernel",
+      "title": "AI agents in action: tool execution using MCP with Semantic Kernel",
+      "abstract": "AI agents are evolving from text-based assistants into systems capable of performing real-world tasks. We will explore how MCP enables AI agents to execute actions beyond their initial context. We will demonstrate how to implement MCP in agents built with Semantic Kernel using C#, and how these agents can use tool calling to complete tasks.",
+      "speakerIds": ["geert-van-der-cruijsen", "jan-de-vries"]
+    },
+    {
+      "id": "platform-adoption",
+      "title": "No, I don't want to use your platform!",
+      "abstract": "You've built an amazing internal developer platform, but developers aren't using it. This session explores why platforms fail to gain adoption and how to design platforms that developers actually want to use. Learn about developer experience, golden paths, and measuring platform success.",
+      "speakerIds": ["geert-van-der-cruijsen"]
+    }
+  ]
+}
