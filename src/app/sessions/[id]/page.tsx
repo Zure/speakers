@@ -1,9 +1,17 @@
 import { notFound } from 'next/navigation'
-import { getSessionById, getSpeakersByIds } from '@/lib/data'
+import { getAllSessions, getSessionById, getSpeakersByIds } from '@/lib/data'
 import { SpeakerCard } from '@/components/session-detail'
 
 interface PageProps {
   params: Promise<{ id: string }>
+}
+
+export const dynamicParams = false
+
+export async function generateStaticParams() {
+  return getAllSessions().map((session) => ({
+    id: session.id,
+  }))
 }
 
 export default async function SessionDetailPage({ params }: PageProps) {

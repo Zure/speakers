@@ -1,9 +1,17 @@
 import { notFound } from 'next/navigation'
-import { getSpeakerById, getSessionsBySpeakerId, getAllSpeakers } from '@/lib/data'
+import { getAllSpeakers, getSpeakerById, getSessionsBySpeakerId } from '@/lib/data'
 import { ProfileSessionsGrid } from '@/components/profile'
 
 interface PageProps {
   params: Promise<{ id: string }>
+}
+
+export const dynamicParams = false
+
+export async function generateStaticParams() {
+  return getAllSpeakers().map((speaker) => ({
+    id: speaker.id,
+  }))
 }
 
 export default async function SpeakerProfilePage({ params }: PageProps) {
