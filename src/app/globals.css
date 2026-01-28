@@ -1,0 +1,36 @@
+/* Google Fonts - must come before @import "tailwindcss" */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+/* Design System Tokens */
+:root {
+  /* Pure black and white color palette */
+  --color-bg-light: #ffffff;
+  --color-text-light: #000000;
+  
+  /* Typography */
+  --font-heading: 'DM Sans', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+@theme inline {
+  /* Font families */
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-heading: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  
+  /* Colors - Pure black/white design */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
