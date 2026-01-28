@@ -1,0 +1,24 @@
+{
+  "session": {
+    "id": "platform-engineering-workshop",
+    "title": "Build a cloud native engineering platform in a day",
+    "abstract": "Building and running software in the cloud can overwhelm developers with many tools and settings. Platform engineering fixes this by giving teams one open-source, cloud native platform that hides the hard parts and offers ready-made golden paths. In this full-day workshop you will build such a platform with CNCF projects, GitOps with Argo CD, and Backstage templates.",
+    "speakerIds": ["geert-van-der-cruijsen", "pasi-huuhka"]
+  },
+  "speakers": [
+    {
+      "id": "geert-van-der-cruijsen",
+      "name": "Geert van der Cruijsen",
+      "title": "CEO Zure Netherlands",
+      "bio": "Geert van der Cruijsen is the CEO of Zure Netherlands, helping companies improve how they build software by combining strong engineering culture with modern technology. He focuses on DevOps, cloud-native development, architecture and AI, enabling teams to work more autonomously and deliver faster through smart platforms and better ways of working.",
+      "photo": "https://sessionize.com/image/dfd9-200o200o2-JXXeFuFmNbuqSi4jDbcx7i.jpg"
+    },
+    {
+      "id": "pasi-huuhka",
+      "name": "Pasi Huuhka",
+      "title": "DevOps Architect at Zure | DevTech MVP",
+      "bio": "Pasi Huuhka is a Microsoft Azure MVP with a background spanning DevOps, full stack software development, architecture, and systems administration. Since 2013, he's worked hands-on with a broad range of Azure's platform-native, container-based and serverless offerings.",
+      "photo": "https://sessionize.com/image/b001-200o200o2-NAkknZLCRnWd9yVZdiZctd.jpg"
+    }
+  ]
+}
