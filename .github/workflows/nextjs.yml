@@ -1,21 +1,15 @@
-name: Deploy Next.js site to Pages
+name: Deploy to Azure Static Web Apps
 
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches: ["main"]
 
 jobs:
-  build:
+  build_and_deploy:
+    if: github.event_name == 'push' || github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,23 +18,19 @@ jobs:
           node-version: "20"
           cache: npm
           cache-dependency-path: src/package-lock.json
-      - uses: actions/configure-pages@v5
+      - uses: Azure/static-web-apps-deploy@v1
         with:
-          static_site_generator: next
-      - run: npm ci
-        working-directory: ./src
-      - run: npm run build
-        working-directory: ./src
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./src/out
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: "src"
+          output_location: "out"
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  close_preview:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    needs: build
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: close
