@@ -23,11 +23,14 @@ jobs:
         working-directory: ./src
       - run: npm run build
         working-directory: ./src
-      - uses: azure/login@v2
+
+      - name: 'Login via Azure CLI'
+        uses: azure/login@v2
         with:
           client-id: "6658b414-c24f-4a3d-9c88-d160af9f5191"
           tenant-id: "160c697c-1fc7-465c-9187-67e7080382bb"
           subscription-id: "b8affb75-1fd8-4116-8065-dc871fdbe8bc"
+          
       - name: Deploy to Azure Static Web Apps
         run: |
           if [ "${GITHUB_REF_NAME}" = "main" ]; then
