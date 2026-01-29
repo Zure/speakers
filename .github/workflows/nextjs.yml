@@ -24,25 +24,33 @@ jobs:
       - run: npm run build
         working-directory: ./src
 
-      - name: 'Login via Azure CLI'
+      - name: 'Login via Azure CLI'  
         uses: azure/login@v2
         with:
-          client-id: "6658b414-c24f-4a3d-9c88-d160af9f5191"
-          tenant-id: "160c697c-1fc7-465c-9187-67e7080382bb"
-          subscription-id: "b8affb75-1fd8-4116-8065-dc871fdbe8bc"
-          
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Install Static Web Apps CLI
+        run: npm install -g @azure/static-web-apps-cli
+
+      - name: Fetch Static Web Apps token
+        run: |
+          az extension add --name staticwebapp --upgrade
+          echo "SWA_DEPLOYMENT_TOKEN=$(az staticwebapp secrets list \
+            --name \"zure-speakers\" \
+            --resource-group \"zure-speakers\" \
+            --query \"properties.apiKey\" \
+            -o tsv)" >> "$GITHUB_ENV"
+
       - name: Deploy to Azure Static Web Apps
         run: |
           if [ "${GITHUB_REF_NAME}" = "main" ]; then
-            az staticwebapp upload \
-              --name "zure-speakers" \
-              --resource-group "zure-speakers" \
-              --source "./src/out"
+            swa deploy "./src/out" \
+              --deployment-token "${SWA_DEPLOYMENT_TOKEN}"
           else
             env_name=$(echo "${GITHUB_REF_NAME}" | tr '/_' '-')
-            az staticwebapp upload \
-              --name "zure-speakers" \
-              --resource-group "zure-speakers" \
-              --environment "${env_name}" \
-              --source "./src/out"
+            swa deploy "./src/out" \
+              --deployment-token "${SWA_DEPLOYMENT_TOKEN}" \
+              --env "${env_name}"
           fi
