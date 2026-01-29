@@ -96,6 +96,14 @@ src/
 
 The site uses a single static JSON file (`data/speakers.json`) containing all speakers and sessions. Update this file to add/modify speakers and sessions.
 
+### Update From Sessionize
+
+Scrape the Sessionize speakers directory and generate a new JSON file (does not overwrite `data/speakers.json`):
+
+```bash
+npm run scrape:sessionize
+```
+
 ## Design System
 
 ### Colors
@@ -119,4 +127,3 @@ For bookings or inquiries, contact us at [info@zure.com](mailto:info@zure.com)
 ## License
 
 © Zure. All rights reserved.
-

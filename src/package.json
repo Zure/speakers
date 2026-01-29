@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "scrape:sessionize": "node scripts/sessionize-scrape.js"
   },
   "dependencies": {
     "next": "16.1.4",
