@@ -37,20 +37,31 @@ jobs:
       - name: Fetch Static Web Apps token
         run: |
           az extension add --name staticwebapp --upgrade
-          echo "SWA_DEPLOYMENT_TOKEN=$(az staticwebapp secrets list \
-            --name \"zure-speakers\" \
-            --resource-group \"zure-speakers\" \
-            --query \"properties.apiKey\" \
-            -o tsv)" >> "$GITHUB_ENV"
+          SWA_TOKEN=$(az staticwebapp secrets list \
+            --name "zure-speakers" \
+            --resource-group "zure-speakers" \
+            --query "properties.apiKey" \
+            -o tsv)
+          
+          if [ -z "$SWA_TOKEN" ]; then
+            echo "ERROR: Failed to retrieve deployment token"
+            exit 1
+          fi
+          
+          echo "SWA_DEPLOYMENT_TOKEN=$SWA_TOKEN" >> "$GITHUB_ENV"
+          echo "✓ Deployment token retrieved successfully"
 
       - name: Deploy to Azure Static Web Apps
         run: |
           if [ "${GITHUB_REF_NAME}" = "main" ]; then
+            echo "Deploying to production environment..."
             swa deploy "./src/out" \
-              --deployment-token "${SWA_DEPLOYMENT_TOKEN}"
+              --deployment-token "${{ env.SWA_DEPLOYMENT_TOKEN }}" \
+              --env production
           else
             env_name=$(echo "${GITHUB_REF_NAME}" | tr '/_' '-')
+            echo "Deploying to environment: ${env_name}..."
             swa deploy "./src/out" \
-              --deployment-token "${SWA_DEPLOYMENT_TOKEN}" \
+              --deployment-token "${{ env.SWA_DEPLOYMENT_TOKEN }}" \
               --env "${env_name}"
           fi
