@@ -118,13 +118,6 @@ function absoluteUrl(href) {
   return new URL(href, BASE_URL).toString()
 }
 
-function ensureUniqueSpeakerId(baseId, existingIds) {
-  if (!existingIds.has(baseId)) return baseId
-  let n = 2
-  while (existingIds.has(`${baseId}-${n}`)) n++
-  return `${baseId}-${n}`
-}
-
 function parseSpeakerDirectory(html) {
   const dom = new JSDOM(html)
   const doc = dom.window.document
@@ -204,10 +197,8 @@ async function main() {
     throw new Error(`Invalid input data model in ${args.inPath}`)
   }
 
-  const existingSpeakerIds = new Set(data.speakers.map(s => s.id))
   const speakersById = new Map(data.speakers.map(s => [s.id, s]))
   const profileUrlToSpeakerId = new Map()
-  const assignedSpeakerIds = new Set()
 
   const sessionsByNormTitle = new Map()
   const touchedSessionTitles = new Set()
@@ -233,17 +224,7 @@ async function main() {
     const profile = parseSpeakerProfile(profileHtml)
 
     const speakerName = profile.name || dirSpeaker.name
-    const baseId = slugify(speakerName)
-    let speakerId = baseId
-
-    // If we've already assigned this id in this run to a different profile URL,
-    // create a unique variant to avoid overwriting a different person.
-    if (assignedSpeakerIds.has(speakerId)) {
-      speakerId = ensureUniqueSpeakerId(speakerId, existingSpeakerIds)
-    }
-
-    existingSpeakerIds.add(speakerId)
-    assignedSpeakerIds.add(speakerId)
+    const speakerId = slugify(speakerName)
     profileUrlToSpeakerId.set(dirSpeaker.profileUrl, speakerId)
 
     const speakerRecord = {
@@ -255,8 +236,13 @@ async function main() {
     }
 
     if (speakersById.has(speakerId)) {
-      // Overwrite with Sessionize data.
-      Object.assign(speakersById.get(speakerId), speakerRecord)
+      // Duplicate names can exist in Sessionize as separate profiles.
+      // Treat them as the same person and only fill missing fields.
+      const existingSpeaker = speakersById.get(speakerId)
+      if (!existingSpeaker.name && speakerRecord.name) existingSpeaker.name = speakerRecord.name
+      if (!existingSpeaker.title && speakerRecord.title) existingSpeaker.title = speakerRecord.title
+      if (!existingSpeaker.bio && speakerRecord.bio) existingSpeaker.bio = speakerRecord.bio
+      if (!existingSpeaker.photo && speakerRecord.photo) existingSpeaker.photo = speakerRecord.photo
     } else {
       data.speakers.push(speakerRecord)
       speakersById.set(speakerId, speakerRecord)
@@ -297,6 +283,41 @@ async function main() {
     // Be polite to Sessionize.
     await sleep(200)
   }
+
+  // Canonicalize any existing duplicate ids like "name-2" to the base slug.
+  // This prevents duplicates from accumulating when scraping in-place.
+  const canonicalBySlug = new Map()
+  const idRemap = new Map()
+  const keptSpeakers = []
+
+  for (const speaker of data.speakers) {
+    const slug = slugify(speaker.name)
+    if (!canonicalBySlug.has(slug)) {
+      canonicalBySlug.set(slug, speaker)
+      if (speaker.id !== slug) idRemap.set(speaker.id, slug)
+      speaker.id = slug
+      keptSpeakers.push(speaker)
+      continue
+    }
+
+    const canonical = canonicalBySlug.get(slug)
+    idRemap.set(speaker.id, canonical.id)
+    if (!canonical.title && speaker.title) canonical.title = speaker.title
+    if (!canonical.bio && speaker.bio) canonical.bio = speaker.bio
+    if (!canonical.photo && speaker.photo) canonical.photo = speaker.photo
+  }
+
+  for (const session of data.sessions) {
+    if (!Array.isArray(session.speakerIds)) continue
+    const next = []
+    for (const sid of session.speakerIds) {
+      const mapped = idRemap.get(sid) || sid
+      if (!next.includes(mapped)) next.push(mapped)
+    }
+    session.speakerIds = next
+  }
+
+  data.speakers = keptSpeakers
 
   await fs.mkdir(path.dirname(outAbs), { recursive: true })
   await fs.writeFile(outAbs, JSON.stringify(data, null, 2) + '\n', 'utf8')
