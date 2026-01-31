@@ -907,6 +907,14 @@
       "speakerIds": [
         "ruben-delange"
       ]
+    },
+    {
+      "id": "sessionize-161941",
+      "title": "From Vibecoding to Team Coding",
+      "abstract": "Many of us developers have tried vibecoding or spec-driven development. Some of us think it is a real delivery boost, others that the quality is not there yet. Some have tried SDD frameworks, such as Spec-Kit or Kiro, while others play around with simpler PRD.md files. Some swear on the process of research-plan-implement, with a sprinkling of git work-trees and parallelization via subagents, while others think that AI is more limited and best suited to learning, documenting, planning and maybe generating tests.\nI don't know who is right, but I know that in a team of people, not everyone can have a different approach. This talk is about my experiences in how a team could approach AI-assisted development. After this talk, you'll have the necessary tools to start figuring out if AI is something that might boost your team's delivery.\nThe talk is not technical per se, more about the tooling, process, and frameworks such as SDD, context, and harness engineering.",
+      "speakerIds": [
+        "sakari-nahi"
+      ]
     }
   ]
 }
