@@ -101,7 +101,7 @@ The site uses a single static JSON file (`data/speakers.json`) containing all sp
 Scrape the Sessionize speakers directory and generate a new JSON file (does not overwrite `data/speakers.json`):
 
 ```bash
-npm run scrape:sessionize
+npm run scrape:sessionize -- --in data/speakers.json --out data/speakers.json
 ```
 
 ## Design System

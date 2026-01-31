@@ -21,6 +21,10 @@ export function SessionsGrid({ sessions, speakers }: SessionsGridProps) {
     )
   })
 
+  const orderedSessions = [...filteredSessions].sort((a, b) =>
+    a.title.localeCompare(b.title, undefined, { sensitivity: 'base' })
+  )
+
   if (sessions.length === 0) {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
@@ -56,12 +60,12 @@ export function SessionsGrid({ sessions, speakers }: SessionsGridProps) {
       {/* Results count */}
       {searchQuery && (
         <p className="text-sm text-neutral-600">
-          {filteredSessions.length} {filteredSessions.length === 1 ? 'session' : 'sessions'} found
+          {orderedSessions.length} {orderedSessions.length === 1 ? 'session' : 'sessions'} found
         </p>
       )}
 
       {/* Sessions Grid */}
-      {filteredSessions.length === 0 ? (
+      {orderedSessions.length === 0 ? (
         <div className="flex items-center justify-center min-h-[200px]">
           <div className="text-center">
             <p className="text-xl font-bold text-neutral-900 mb-2 font-heading">
@@ -74,7 +78,7 @@ export function SessionsGrid({ sessions, speakers }: SessionsGridProps) {
         </div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {filteredSessions.map((session) => (
+          {orderedSessions.map((session) => (
             <SessionCard
               key={session.id}
               session={session}

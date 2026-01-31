@@ -13,11 +13,11 @@ export function SessionCard({ session, speakers }: SessionCardProps) {
   const sessionSpeakers = speakers.filter(s => session.speakerIds.includes(s.id))
 
   return (
-    <div className="group bg-white transition-all duration-200 flex flex-col pb-6 border-b border-neutral-200">
+    <div className="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col">
       {/* Session Content - clickable */}
       <Link
         href={`/sessions/${session.id}`}
-        className="w-full text-left py-6 flex-1 flex flex-col"
+        className="w-full text-left flex-1 flex flex-col"
       >
         <h3 className="text-xl font-bold text-neutral-900 mb-3 group-hover:underline leading-tight font-heading">
           {session.title}
@@ -29,7 +29,7 @@ export function SessionCard({ session, speakers }: SessionCardProps) {
 
       {/* Speaker(s) - clickable separately */}
       {sessionSpeakers.length > 0 && (
-        <div className="pt-4">
+        <div className="mt-6 pt-4 border-t border-neutral-100">
           <p className="text-xs font-bold text-neutral-500 mb-3 uppercase tracking-wide">
             {sessionSpeakers.length > 1 ? 'Speakers' : 'Speaker'}
           </p>

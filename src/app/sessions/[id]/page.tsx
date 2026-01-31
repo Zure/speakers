@@ -25,7 +25,7 @@ export default async function SessionDetailPage({ params }: PageProps) {
   const speakers = getSpeakersByIds(session.speakerIds)
 
   return (
-    <div className="bg-white">
+    <div className="bg-neutral-50">
       {/* Hero Section */}
       <div className="bg-neutral-50 border-b-2 border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 py-16">
@@ -43,12 +43,14 @@ export default async function SessionDetailPage({ params }: PageProps) {
 
       {/* Abstract Section */}
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-heading">
-          Overview
-        </h2>
-        <p className="text-lg text-neutral-700 leading-relaxed max-w-4xl">
-          {session.abstract}
-        </p>
+        <div className="bg-white border border-neutral-200 rounded-2xl p-6 md:p-8 shadow-sm">
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-heading">
+            Overview
+          </h2>
+          <p className="text-lg text-neutral-700 leading-relaxed max-w-4xl">
+            {session.abstract}
+          </p>
+        </div>
       </div>
 
       {/* Speakers Section */}

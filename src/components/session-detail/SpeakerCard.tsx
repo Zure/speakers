@@ -11,11 +11,11 @@ export function SpeakerCard({ speaker }: SpeakerCardProps) {
   return (
     <Link
       href={`/speakers/${speaker.id}`}
-      className="block group w-full bg-white transition-all duration-200 p-6 text-left border-b border-neutral-200"
+      className="block group w-full bg-white border border-neutral-200 rounded-2xl p-6 text-left shadow-sm hover:shadow-md transition-shadow duration-200"
     >
       <div className="flex flex-col sm:flex-row gap-6 items-start">
         {/* Speaker Photo */}
-        <div className="flex-shrink-0 w-32 h-32 overflow-hidden">
+        <div className="flex-shrink-0 w-32 h-32 overflow-hidden rounded-xl">
           <img
             src={speaker.photo}
             alt={speaker.name}

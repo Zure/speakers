@@ -33,7 +33,7 @@ export default async function SpeakerProfilePage({ params }: PageProps) {
           <div className="flex flex-col md:flex-row gap-12 items-start">
             {/* Speaker Photo */}
             <div className="w-full md:w-80 flex-shrink-0">
-              <div className="aspect-square w-full max-w-sm mx-auto md:mx-0 overflow-hidden border-4 border-white">
+              <div className="aspect-square w-full max-w-sm mx-auto md:mx-0 overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src={speaker.photo}
                   alt={speaker.name}

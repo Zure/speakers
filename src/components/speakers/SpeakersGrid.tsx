@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import type { Speaker } from '@/lib/types'
 import { SpeakerCard } from './SpeakerCard'
 
@@ -6,6 +9,23 @@ interface SpeakersGridProps {
 }
 
 export function SpeakersGrid({ speakers }: SpeakersGridProps) {
+  const [orderedSpeakers, setOrderedSpeakers] = useState<Speaker[]>(speakers)
+
+  useEffect(() => {
+    if (speakers.length < 2) {
+      setOrderedSpeakers(speakers)
+      return
+    }
+
+    const shuffled = [...speakers]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+
+    setOrderedSpeakers(shuffled)
+  }, [speakers])
+
   if (speakers.length === 0) {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
@@ -23,7 +43,7 @@ export function SpeakersGrid({ speakers }: SpeakersGridProps) {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-      {speakers.map((speaker) => (
+      {orderedSpeakers.map((speaker) => (
         <SpeakerCard
           key={speaker.id}
           speaker={speaker}

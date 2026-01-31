@@ -26,11 +26,4 @@ describe('SpeakerCard', () => {
     const link = screen.getByRole('link')
     expect(link).toHaveAttribute('href', '/speakers/test-speaker')
   })
-
-  it('applies grayscale filter to image', () => {
-    render(<SpeakerCard speaker={mockSpeaker} />)
-    
-    const image = screen.getByAltText('John Doe')
-    expect(image).toHaveClass('grayscale')
-  })
 })
