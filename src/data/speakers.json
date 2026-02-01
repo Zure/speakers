@@ -104,6 +104,13 @@
       "title": "Cybersecurity enthusiastic",
       "bio": "Joona works as a cybersecurity consultant at Zure. He has had decade long passion on developing DevOps and DevSecOps practices in software development. Fifteen years of Azure has made him a true cloud specialist.",
       "photo": "https://sessionize.com/image/7c8c-400o400o2-Hgz3yATuUaoUAiyNZHP8s1.png"
+    },
+    {
+      "id": "miska-kyto",
+      "name": "Miska Kytö",
+      "title": "Microsoft MVP | Cybersecurity & AI Professional",
+      "bio": "Miska is a sharp and creative consultant with a solid background in cybersecurity, specializing in security operations and AI security. Currently working at Zure, he has experience in managing and developing security in both small and large environments, from Microsoft 365 to Azure. Miska is also a Microsoft MVP, having been awarded as the youngest MVP in Europe.",
+      "photo": "https://sessionize.com/image/b169-400o400o2-WDdrKm3qyBr4tJWp476FeE.jpg"
     }
   ],
   "sessions": [
@@ -914,6 +921,30 @@
       "abstract": "Many of us developers have tried vibecoding or spec-driven development. Some of us think it is a real delivery boost, others that the quality is not there yet. Some have tried SDD frameworks, such as Spec-Kit or Kiro, while others play around with simpler PRD.md files. Some swear on the process of research-plan-implement, with a sprinkling of git work-trees and parallelization via subagents, while others think that AI is more limited and best suited to learning, documenting, planning and maybe generating tests.\nI don't know who is right, but I know that in a team of people, not everyone can have a different approach. This talk is about my experiences in how a team could approach AI-assisted development. After this talk, you'll have the necessary tools to start figuring out if AI is something that might boost your team's delivery.\nThe talk is not technical per se, more about the tooling, process, and frameworks such as SDD, context, and harness engineering.",
       "speakerIds": [
         "sakari-nahi"
+      ]
+    },
+    {
+      "id": "sessionize-158597",
+      "title": "Time to supercharge your SecOps with AI!",
+      "abstract": "We utilize more and more AI in our daily work every day - whether companies want it or not. This means that your security operations can't be left behind, but should also adopt AI to upgrade their capabilities to 2025!\nIn this session, we'll go through tangible examples that you can implement to boost your security operations, cut down on MTTR (Mean-Time-To-Response) and save time from your already overwhelmed administrators.\nLearn how you can utilize Azure OpenAI / AI Foundry, Logic Apps and many other technologies to take your SecOps processes from 2015 to 2025!",
+      "speakerIds": [
+        "miska-kyto"
+      ]
+    },
+    {
+      "id": "sessionize-158596",
+      "title": "AI compromise in action: Inside the world's first Copilot vulnerability",
+      "abstract": "Your company just got hacked through your M365 Copilot, and you didn't notice a thing.\nThis was the reality with Echoleak, the first real-world vulnerability discovered in Microsoft 365 Copilot. A true zero-click attack that could lead to your sensitive data being handed over to an attacker.\nIn this session, we take a deep dive into how EchoLeak works, what are the technical vulnerabilities it highlights in AI systems, and the techical controls available to mitigate these risks. You'll learn how AI systems are vulnerable to attack vectors that completely bypass traditional security thinking and discover the defenses you can build into your own AI solutions.",
+      "speakerIds": [
+        "miska-kyto"
+      ]
+    },
+    {
+      "id": "sessionize-162047",
+      "title": "terraform in practice for modern cloud infrastructure",
+      "abstract": "This full day workshop is a hands on session focused on building and operating cloud infrastructure with Terraform. You work with Microsoft Azure as the main platform, while also using cloud agnostic services such as SQL, GitHub, and Cloudflare. The goal is to apply Terraform in setups that are close to real production environments.\nWe start with the Terraform and OpenTofu basics to align everyone. Providers, resources, state, and modules are introduced and used immediately. The workshop also compares Terraform with Azure native tooling such as Bicep, and explains when to use which approach in practice.\nHands on labs are combined with short theory blocks throughout the day. You work with CI/CD pipelines, GitOps workflows, security controls, and platform engineering patterns. Topics include environment separation, secrets management, policy application, and keeping infrastructure changes controlled and repeatable.\nAt the end of the workshop, you can use Terraform to build and run production ready cloud infrastructure. You leave with working examples, reusable patterns, and practical experience you can apply in your own projects.",
+      "speakerIds": [
+        "chris-van-sluijsveld"
       ]
     }
   ]
