@@ -946,6 +946,14 @@
       "speakerIds": [
         "chris-van-sluijsveld"
       ]
+    },
+    {
+      "id": "sessionize-136420",
+      "title": "From Single Agents to Systems: Designing Multi-Agent Architecture",
+      "abstract": "In the last couple of years, architecture of AI solutions has matured. As an industry, we have found some design patterns and best practices as we've realized that single-agent designs may struggle with reliability and scale when we move from experimentation to production.\nIn this talk, we explore how multi-agent architectures address requirements by decomposing AI systems into specialized, coordinated components, with an understanding of the trade-offs.\nAfter this talk, you will have an understanding of the different approaches to multi-agent architectures, why are they needed, and what could happen next in the evolution of agentic development.",
+      "speakerIds": [
+        "sakari-nahi"
+      ]
     }
   ]
 }
