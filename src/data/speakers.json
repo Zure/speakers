@@ -954,6 +954,14 @@
       "speakerIds": [
         "sakari-nahi"
       ]
+    },
+    {
+      "id": "sessionize-168033",
+      "title": "AI as Your Sidekick: Real Lessons, Real Results",
+      "abstract": "What happens when you let AI write your code, your posts, and your plans? In this talk I share what happened when I put AI to work across everything: shipping apps to production, managing my LinkedIn presence, automating my planning, even learning new frameworks.\nEach experiment showed the same pattern: AI gives back exactly as much as you put into managing it. I will tell you what worked, what failed, and how you can improve your own results based on my lessons learned.\nYou'll leave with real examples, an honest cost/benefit breakdown, and a clear sense of how to get more value out of your new artificial friend, without losing the human logic behind it.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
     }
   ]
 }
