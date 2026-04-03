@@ -962,6 +962,14 @@
       "speakerIds": [
         "barbara-forbes"
       ]
+    },
+    {
+      "id": "sessionize-152854",
+      "title": "Multi-agent Orchestration patterns in Microsoft's Agent Framework",
+      "abstract": "In this talk, we'll explore different orchestration pattern implementations provided by Microsoft's Agent Framework:\n- Sequential\n- Concurrent\n- Group Chat\n- Handoff\n- MagenticOne\nParticipants will learn what these patterns can do, when they should be used and how to implement them in C# code.\nTo get the most out of the presentation, participants should have basic knowledge of MAF, but in general these patters are very simplistic.",
+      "speakerIds": [
+        "pasi-huuhka"
+      ]
     }
   ]
 }
