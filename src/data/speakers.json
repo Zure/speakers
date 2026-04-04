@@ -970,6 +970,14 @@
       "speakerIds": [
         "pasi-huuhka"
       ]
+    },
+    {
+      "id": "sessionize-168797",
+      "title": "The Integration Expedition: Navigating from Monolith to Cloud Ecosystem",
+      "abstract": "Microsoft integration evolved from a single, opinionated monolith into a powerful cloud ecosystem. Along the way, the guardrails disappeared — and Azure handed us the fedora and the whip.\nBizTalk was the museum vault: locked down, opinionated, and frankly a little dusty. Azure Integration Services is the jungle. It doesn't care whether you make it out alive. The problem? Most modern integrations look like they were dropped into the wilderness without a map, a plan, or a decent pair of boots.\nIn this session, we'll trace the expedition from monolith to ecosystem through real enterprise integration patterns. We'll show why wiring services together isn't architecture, how poor design decisions surface fast through cost, reliability, and observability, and why the open wilderness demands more discipline — not less.\nWe'll close with a forward-looking look at how modern AI-assisted development approaches can accelerate integration work, provided you pack the right gear, build for the unexpected, and never, ever trust the floor!",
+      "speakerIds": [
+        "pieter-vandenheede"
+      ]
     }
   ]
 }
