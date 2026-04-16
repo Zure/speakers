@@ -582,7 +582,7 @@
     {
       "id": "sessionize-161680",
       "title": "Spec-driven development live",
-      "abstract": "In this session, we will SDD something together. I'll ask you what, and then we will explore different ways of approaching vibecoding and SDD. The goal is to get as close as possible to proper coding. At the end of the session, we might not have something that compiles, but we will certainly have learned something.",
+      "abstract": "What happens when you build software with AI in front of an audience?\nIn this live session, we’ll ideate with the room and turn the idea into a working solution using Spec-Driven Development (SDD) and other AI practices/metholodogies.\nThe practices of developing with AI are going forward at a daunting pace. Spec-Driven Development is one approach, but not the only one, as Context Engineering, Harness Engineering, AI Test-Driven Development, Agentic Development, and other approaches are relevant too. In fact, doing AI-assisted development, we are likely to be using many of these approaches at the same time.\nToday, we will explore relevant AI development approaches, with Spec-Driven Development in a central position, while developing a solution live.\nThis isn’t a polished demo. It’s a transparent, real-time look at how software development is changing. Together, we'll explore what it takes to go from idea to reliable implementation with AI, from a solo developer vibe coding to a team delivering a robust, high-quality outcome.\nYou’ll walk away with practical patterns for guiding AI, structuring specs, and building in a way that’s repeatable, testable, and ready for teams—not just demos.",
       "speakerIds": [
         "sakari-nahi"
       ]
