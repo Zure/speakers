@@ -978,6 +978,14 @@
       "speakerIds": [
         "pieter-vandenheede"
       ]
+    },
+    {
+      "id": "sessionize-175021",
+      "title": "Forging an AI solution that holds up in Production",
+      "abstract": "Do you ship AI solutions to Production? My team and I did exactly that!\nCreating a nice chat experience isn't that hard anymore. You know what is? Building and shipping a solution capable of handling Production data and still providing value to the users while not bankrupting the company.\nIn this session, I’ll show how we built a real AI solution with Microsoft Agent Framework and Microsoft Foundry. The setup combines a .NET orchestration layer, specialist agents, scoped instructions, server-side tools, browser-side frontend tools, and both streaming and structured responses. I’ll walk through the design choices behind it, how agents interop with each other, and explain why adding agent-to-agent flows make the system very flexible.\nThe session isn't only about green fields and rainbows. We had to deal with incomplete specs, version incompatibilities, and retrofit our solution with new features popping up every week. I won't go over every single thing, only the issues that are still relevant today and what we learned along the way.\nYou will leave with practical patterns that can be used straight away. How to structure instructions, create tools your agents can use, if streaming makes sense, and when structured output is the better option. All the while making sure you have a reliable, structured, observable, and above all maintainable solution overall.",
+      "speakerIds": [
+        "jan-de-vries"
+      ]
     }
   ]
 }
