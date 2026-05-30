@@ -111,6 +111,13 @@
       "title": "Microsoft MVP | Cybersecurity & AI Professional",
       "bio": "Miska is a sharp and creative consultant with a solid background in cybersecurity, specializing in security operations and AI security. Currently working at Zure, he has experience in managing and developing security in both small and large environments, from Microsoft 365 to Azure. Miska is also a Microsoft MVP, having been awarded as the youngest MVP in Europe.",
       "photo": "https://sessionize.com/image/b169-400o400o2-WDdrKm3qyBr4tJWp476FeE.jpg"
+    },
+    {
+      "id": "marnix-van-valen",
+      "name": "Marnix van Valen",
+      "title": "Cloud Architect @ Zure",
+      "bio": "Marnix van Valen is an architect and consultant at Zure, where he builds teams and platforms. In Marnix' spare time, he enjoys tinkering with electronics, hiking and spending time with his kids.",
+      "photo": "https://sessionize.com/image/d02b-400o400o2-EzDTzX1mzaRH2sbTVYJGsR.jpg"
     }
   ],
   "sessions": [
@@ -985,6 +992,30 @@
       "abstract": "Do you ship AI solutions to Production? My team and I did exactly that!\nCreating a nice chat experience isn't that hard anymore. You know what is? Building and shipping a solution capable of handling Production data and still providing value to the users while not bankrupting the company.\nIn this session, I’ll show how we built a real AI solution with Microsoft Agent Framework and Microsoft Foundry. The setup combines a .NET orchestration layer, specialist agents, scoped instructions, server-side tools, browser-side frontend tools, and both streaming and structured responses. I’ll walk through the design choices behind it, how agents interop with each other, and explain why adding agent-to-agent flows make the system very flexible.\nThe session isn't only about green fields and rainbows. We had to deal with incomplete specs, version incompatibilities, and retrofit our solution with new features popping up every week. I won't go over every single thing, only the issues that are still relevant today and what we learned along the way.\nYou will leave with practical patterns that can be used straight away. How to structure instructions, create tools your agents can use, if streaming makes sense, and when structured output is the better option. All the while making sure you have a reliable, structured, observable, and above all maintainable solution overall.",
       "speakerIds": [
         "jan-de-vries"
+      ]
+    },
+    {
+      "id": "sessionize-175322",
+      "title": "Cloud native platform engineering",
+      "abstract": "Cloud native platform engineering starts with Kubernetes and the CNCF ecosystem, but it also needs to take sovereignty and control into account. In this session we look at how to design a self service engineering platform around cloud native principles. The focus is on choosing the right tools for the right problem and bringing them together into a platform that enables self service, consistency, and clear boundaries.\nGeert will demo several tools from the cloud native ecosystem, including GitOps approaches, Argo CD, Crossplane, and Terranetes, and explain when to use each of them. The session also discusses how sovereignty requirements and AI driven development influence platform design decisions. The result is a clearer understanding of how to combine Azure and cloud native tools into a practical platform architecture.",
+      "speakerIds": [
+        "geert-van-der-cruijsen"
+      ]
+    },
+    {
+      "id": "sessionize-175321",
+      "title": "Platform engineering decisions: You choose, I disagree",
+      "abstract": "Many platform engineering initiatives start by copying popular examples, following reference models, or adopting patterns from blogs and conference talks. Decisions are often justified with “this is how others do it”. These approaches can be useful, but they are often treated as rules instead of starting points.\nThis is an interactive session and it is not about being right. We discuss a number of platform engineering decisions and the audience is asked to choose what they think is the best option each time. Participants can also bring their own questions or statements, which we will discuss during the session. After the majority vote, Geert explains what that choice assumes and what is often overlooked, based on experience from real projects. He then explains when the other option can make more sense. The focus is on trade offs, team context, and outcomes. Platform engineering is not about copying patterns, but about making conscious decisions.",
+      "speakerIds": [
+        "geert-van-der-cruijsen"
+      ]
+    },
+    {
+      "id": "sessionize-175320",
+      "title": "Who's in Charge? Taking Control of Coding Agents with OpenCode and OpenSpec",
+      "abstract": "While GitHub Copilot, Claude Code, and Cursor are fighting for your workflow, a new player has entered the field. OpenCode is open source, model agnostic, and gives you back control. No subscription. No vendor. Your model, your tools, your rules.\nIn this session we look at OpenCode and how to get your agent writing production ready code while you stay in charge of the decisions. We cover how to work with OpenCode in your developer workflow, and then go deeper with spec-driven development using OpenSpec, where your intent lives in the repo and your agent has everything it needs to deliver.\nYou will leave with a concrete workflow that keeps you in control: specs that guide your agent, a design that captures your intent, and a pipeline that builds from one to the other towards production ready code",
+      "speakerIds": [
+        "geert-van-der-cruijsen"
       ]
     }
   ]
