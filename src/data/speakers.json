@@ -501,7 +501,7 @@
     {
       "id": "sessionize-146632",
       "title": "Coding smarter with GitHub Copilot",
-      "abstract": "AI is changing the way we work. But how do we actually create more value with it?\nIn this session, we’ll see how GitHub’s AI-powered tools, like Copilot and Spark, can support every step of your workflow, from writing issues to shipping and maintaining production-ready code. You may have seen the highlights before, so we’ll focus on what matters: how to get consistently better results, instead of feeling like you’re explaining your code to a toddler.\nThrough live demos, we’ll explore how these GitHub tools can become your (slightly annoying) coworker. One that actually saves time, comes up with options you might miss, and occasionally surprises you in a good way.\nYou’ll walk away with a clear overview and practical tips on which tools and models to use.\nLet's find out how we can make AI work for us to bring our ideas to life.",
+      "abstract": "AI is changing the way we work. But how do we actually create more value with it?\nYou've seen what GitHub Copilot can do. But in this session, we will focus on what matters: how to get consistently better results, instead of feeling like you’re explaining your code to a toddler.\nThrough live demos, we’ll explore how GitHub tools can be customized and managed to become your (slightly annoying) coworker. One that actually saves time, comes up with options you might miss, and occasionally surprises you in a good way.\nYou’ll walk away with a clear overview and practical tips on which tools and models to use.\nLet's find out how we can make AI work for us to bring our ideas to life.",
       "speakerIds": [
         "barbara-forbes"
       ]
