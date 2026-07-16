@@ -1017,6 +1017,14 @@
       "speakerIds": [
         "geert-van-der-cruijsen"
       ]
+    },
+    {
+      "id": "sessionize-180836",
+      "title": "Azure Policy as Code: Lessons from the Field",
+      "abstract": "In this session, I take you through everything I learned building a fully automated Azure Policy deployment. We start at the basics: what the Azure Policy structure actually looks like, and what building blocks are available to you. From there we go into Infrastructure as Code, and how you turn those building blocks into something that's actually yours: definitions, assignments, exemptions, all deployed and managed through code instead of clicked together by hand.\nThen, let's talk about all the things I didn't see coming. The assumptions that turned out wrong, the parts I had to rebuild, the design choices that looked fine until they didn't. You get the mistakes so you don't have to make them yourself.\nBy the end of this session, you'll have a clear blueprint for automating Azure Policy in your own Landing Zone, and you'll know exactly which pitfalls to avoid.\nShould you automate your policy setup? Absolutely, it's worth it. This session just saves you the time I spent finding that out the hard way.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
     }
   ]
 }
