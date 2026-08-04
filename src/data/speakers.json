@@ -1025,6 +1025,30 @@
       "speakerIds": [
         "barbara-forbes"
       ]
+    },
+    {
+      "id": "sessionize-168120",
+      "title": "Trust, don't store: how WIF changes your deployment security",
+      "abstract": "Does your deployment pipeline authenticate with a client secret? Then this session is for you. In the best case scenario, secrets live in a vault, get rotated on a schedule nobody loves, and occasionally expire at exactly the wrong moment. In the worst case they are stored somewhere unsecured or never rotate at all. Let's take away the risk with a far better option.\nWorkload Identity Federation replaces stored credentials with a trust relationship. No secrets that can leak, no expiration at the wrong time, nothing stored outside of Azure.\nIn this session we'll explore the systems behind WIF and OpenID Connect and how the two relate. We set up WIF from scratch in both GitHub Actions and Azure DevOps, connecting to Azure. You'll see how the trust model works and what configuration is important. We'll also cover the current limitations and what that means for your specific setup.\nBy the end you will understand exactly how WIF works, have the steps to migrate your existing pipelines and a clear answer if anyone asks you if WIF is the most secure form of authentication",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
+    },
+    {
+      "id": "sessionize-168119",
+      "title": "One Size Fits None: Make Azure best practices work for your organization",
+      "abstract": "The Microsoft Cloud Adoption Framework promises a solid foundation. Azure Verified Modules promise consistent, reusable infrastructure. The Azure Security Benchmark will make sure your resources are protected and secured. And they deliver, but not without making them your own.\nWith flexibility comes complexity. In this session we look at where Microsoft Azure best practices are strong, and where they might start working against you. Not because they are wrong, but because the average company is hard to find. We look through what the standards are and why they will or will not work for you. Maybe your company doesn't need the flexibility of AVM, which can be a pain to update. Maybe developers at your company don't want the freedom that comes with the Cloud Adoption Framework. And some policies in the Azure Security Benchmark can actually block built-in Azure resources. With these and more examples from the field we will pinpoint how you can make these standards work for your company. You will walk away with a clearer vision on what to adopt and what to adapt.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
+    },
+    {
+      "id": "sessionize-168033",
+      "title": "Let AI run your life: what could possibly go wrong",
+      "abstract": "What happens when you let AI write your code, your posts, and your plans? In this talk I share what happened when I put AI to work across everything: shipping apps to production, managing my LinkedIn presence, automating my planning, even learning new frameworks.\nEach experiment showed the same pattern: AI gives back exactly as much as you put into managing it. I will tell you what worked, what failed, and how you can improve your own results based on my lessons learned.\nYou'll leave with real examples, an honest cost/benefit breakdown, and a clear sense of how to get more value out of your new artificial friend, without losing the human logic behind it.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
     }
   ]
 }
