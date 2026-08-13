@@ -118,6 +118,13 @@
       "title": "Cloud Architect @ Zure",
       "bio": "Marnix van Valen is an architect and consultant at Zure, where he builds teams and platforms. In Marnix' spare time, he enjoys tinkering with electronics, hiking and spending time with his kids.",
       "photo": "https://sessionize.com/image/d02b-400o400o2-EzDTzX1mzaRH2sbTVYJGsR.jpg"
+    },
+    {
+      "id": "jake-duddy",
+      "name": "Jake Duddy",
+      "title": "Zure, Data Engineer",
+      "bio": "Jake Duddy is a Business Intelligence specialist with a deep focus on Power BI and Microsoft Fabric. Jake shares his experiment, experiences and insights on his blog, evaluationcontext.github.io. He is also an active speaker, presenting at Fabric User Groups and the prestigious Fabric Power Hour at SQL Bits. From these contributions he was recognized as a Microsoft Data Platform MVP. Additionally he helps out on the Fabric forums, and is a Fabric Community Super User. Finally he is a co-organizer of the Devon and Cornwall Microsoft Power BI User Group.",
+      "photo": "https://cdn.sessionize.com/image/785b-400o400o2-NcuYrcx1zqjoMissFkU2yt.jpg"
     }
   ],
   "sessions": [
