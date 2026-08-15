@@ -125,6 +125,13 @@
       "title": "Zure, Data Engineer",
       "bio": "Jake Duddy is a Business Intelligence specialist with a deep focus on Power BI and Microsoft Fabric. Jake shares his experiment, experiences and insights on his blog, evaluationcontext.github.io. He is also an active speaker, presenting at Fabric User Groups and the prestigious Fabric Power Hour at SQL Bits. From these contributions he was recognized as a Microsoft Data Platform MVP. Additionally he helps out on the Fabric forums, and is a Fabric Community Super User. Finally he is a co-organizer of the Devon and Cornwall Microsoft Power BI User Group.",
       "photo": "https://cdn.sessionize.com/image/785b-400o400o2-NcuYrcx1zqjoMissFkU2yt.jpg"
+    },
+    {
+      "id": "juliana-smith",
+      "name": "Juliana Smith",
+      "title": "Data Engineer at Zure",
+      "bio": "Juliana Smith is a multi‑award‑winning data expert with a background in Physical Oceanography. For over 15 years she has explored the stories hidden within data. Since 2020 she has specialised in analytics engineering and data design. Juliana translates complex datasets into accessible, actionable insights through thoughtful modelling, intuitive structures, and purposeful visual communication. Her work champions WCAG‑aligned accessibility, precision, and clarity, bridging the gap between raw data and human understanding to empower confident, informed decision‑making.",
+      "photo": "https://cdn.sessionize.com/image/44b8-400o400o2-WSqPbFHEhF73ZjnJU2jFnq.jpg"
     }
   ],
   "sessions": [
@@ -1104,6 +1111,142 @@
       "abstract": "Many Azure architectures start by copying reference architectures, following defaults, or applying guidance like the Cloud Adoption Framework without much discussion. Decisions are often justified with “because the CAF said so”. These approaches are useful, but they are often treated as rules instead of guidance.\nThis is an interactive session and it is not about being right. We discuss a number of Azure design decisions and the audience is asked to choose what they think is the best option each time. After the majority vote, Geert explains what that choice assumes and what is often overlooked, based on experience from real projects. He then explains when the other option can make more sense. The focus is on trade offs and context. And yes, the answer still depends, but now everyone knows why.",
       "speakerIds": [
         "geert-van-der-cruijsen"
+      ]
+    },
+    {
+      "id": "sessionize-184010",
+      "title": "From Problem to Product: Building with Design Thinking, AI and Intent",
+      "abstract": "What if you could turn years of experience into a product without being a software developer?\nIn this session, I’ll share how I built PBIX A11y, a free browser-based accessibility checker for Power BI, using design thinking, Microsoft Copilot, and vibe coding in Lovable.\nI’ll walk through the journey from identifying a real user problem to defining a solution, translating accessibility knowledge into practical checks, and rapidly building and iterating a working tool.\nI’ll also share what worked, and what didn’t, when using AI tools across the build process. Copilot supported me as a thinking partner, helping to brainstorm ideas, refine prompts, and translate accessibility requirements into clearer, more structured logic. Lovable provided the vibe coding environment where the solution was actually built and iterated quickly.\nI’ll highlight the importance of human-in-the-loop decision making, especially when AI suggestions exceed real platform constraints.\nAttendees will leave with a practical understanding of how to turn domain expertise into a working product using design thinking and AI, with a grounded view of its constraints and responsibilities.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-177736",
+      "title": "The Psychology of Data-Driven Decisions: How Framing Shapes Data Stories",
+      "abstract": "Framing has influenced human decision-making long before dashboards, reports, and data visualisation existed.\nFrom Aristotle’s principles of persuasion to the behavioural science experiments of the 1950s–1980s, researchers have shown that the way information is presented can significantly influence how people interpret it, what they believe, and the decisions they make. Today, those same principles are embedded in the language, visuals, and narratives we use to communicate data.\nIn this session, we explore the evolution of the framing effect and its relevance to modern analytics. Through real-world examples, we'll examine how subtle visual and verbal choices can change the meaning audiences take from data without altering the underlying numbers. We'll also discuss why ethical data storytelling requires transparency about these choices and how framing can either strengthen or undermine trust.\nAttendees will learn how to identify invisible nudges in reports and dashboards, and apply framing responsibly to support clearer, more informed decisions.\nYou’ll leave with a deeper understanding of the psychology behind data-driven decision-making.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-184001",
+      "title": "From Prompt to Published: Building Power BI Reports with AI Agents",
+      "abstract": "AI agents can now take a Power BI report from prompt to published. But “end-to-end” doesn’t mean “error-free.” Each step in the process has its own failure points, and most go unnoticed until the report is already in front of stakeholders.\nThis session walks through the full build process, from data modelling to DAX to visual design, using AI agents at each stage. For every step, you’ll see the common errors that show up, why they happen, and how to catch and fix them before they reach production.\nExpect live demos throughout. You’ll see AI agents generate real report components, and you’ll see what goes wrong when prompts are too vague or validation is skipped.\nYou’ll leave with a practical checklist for each stage of the process. Not just what AI agents can do, but where they need a human check before you ship.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-180292",
+      "title": "From Prompt to Production: How Copilot Helped Me Ship with Confidence",
+      "abstract": "AI-assisted development has changed who can build web applications. But moving from a prompt to a production-ready application comes with a new challenge: how do you know what AI has created is ready to ship?\nIn this session, I share lessons learnt from building and shipping PBIX A11y, a browser-based accessibility checker for Power BI reports, using AI-assisted development tools and Microsoft Copilot as a technical thinking partner.\nThrough this journey, I discovered that successful AI-assisted development is not just about generating code quickly. It is about understanding what has been created, asking the right questions, validating decisions and applying human judgement.\nYou will learn how Copilot can help you explore unfamiliar technical concepts, review AI-generated output, identify potential issues and build confidence when developing web applications with AI assistance.\nThis session explores the mindset change needed when humans and AI build together: moving from “AI created it” to “I understand it, I validated it, and I can confidently ship it”.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-184000",
+      "title": "From Chaos to Clarity: The Design Principles Every Power BI Report Needs",
+      "abstract": "Many Power BI reports fail before users even start analysing the data. Within seconds, users scan, form impressions, and decide where to focus. When layout, spacing, and hierarchy are unclear, important insights are missed or misunderstood.\nThis session introduces practical design techniques grounded in how people visually process information. The solution is intentional report design: using layout structure, white space, visual hierarchy, and accessibility principles to guide attention deliberately rather than leaving it to chance.\nIn this session, attendees will learn how to structure pages to support natural eye-scanning patterns, prioritise information using hierarchy, and apply accessibility techniques that make insights easier to discover. You will leave with clear, practical methods to create reports that feel organised, purposeful, and easier to use.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-183999",
+      "title": "Building an Application with Copilot and Lovable: The Easy, the Hard, and the Unexpected",
+      "abstract": "AI can generate applications quickly, but turning generated code into a reliable product requires much more than prompting.\nIn this session, I share my experience building PBIX A11y (a free browser-based accessibility checker for Power BI) using Copilot and Lovable from the perspective of a domain expert rather than a traditional developer.\nWe will explore the easy parts of AI-assisted development, the harder lessons around testing and validating generated code, and the unexpected challenges beyond development, including data privacy, GDPR and SEO considerations.\nA practical look at what it takes to move from an idea to a working application when AI becomes your development partner.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-154430",
+      "title": "Beyond Websites: What Accessibility Law Means for Your Power BI Reports",
+      "abstract": "When people think of the European Accessibility Act, they picture websites, banking apps, or ticket machines, rarely Power BI reports. But if your organisation uses Power BI to communicate performance, decisions, risk or strategy, those reports are digital services. If people can’t access them, they’re excluded from the conversation.\nAccessibility isn’t theoretical for me. After a work injury left me with nerve damage in both hands, a simple hardware adjustment transformed how I could work. That experience reshaped how I see design: accessibility isn’t an optional improvement, it’s what enables participation.\nThis practical session connects the European Accessibility Act with the Web Content Accessibility Guidelines (WCAG) and shows how these principles translate directly into Power BI development best practice, covering meaningful structure, keyboard navigation, tab order, colour contrast, and designing information that doesn’t rely on colour alone.\nLeave with clear, practical methods for building Power BI reports that are inclusive by design, going beyond compliance to become genuinely usable for everyone.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-154838",
+      "title": "Accessible by Design: A Deep Dive into WCAG for Power BI Developers",
+      "abstract": "A work-related injury left me with nerve damage in both hands, and for years I struggled with a standard mouse I could barely control. Everything changed when I finally received a specialist mouse. That one small design adjustment transformed my work and reinforced a simple truth: when design is accessible, it empowers, when it isn’t, it quietly excludes.\nThis is exactly why accessibility matters in Power BI.\nIn this deep dive, we’ll bridge the gap between the Web Content Accessibility Guidelines (WCAG) and practical, everyday Power BI development using only native visuals and features. You’ll learn how to turn accessibility principles into concrete design choices that make your reports clearer, kinder, and genuinely easier to use, for everyone.\nWe’ll explore how thoughtful decisions in layout, colour, navigation, and text can meaningfully reduce friction, support diverse user needs, and elevate your reports beyond compliance into truly inclusive design.\nThis session blends technical depth with lived experience to show how small choices in Power BI can make a big difference in someone’s working day.\nBy the end, you’ll be able to:\n1. Translate WCAG principles (Perceivable, Operable, Understandable, Robust) directly into Power BI report decisions.\n2. Improve clarity and usability of native visuals without relying on custom add-ons.\n3. Establish a simple accessibility framework you can adopt across reports or teams.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-173367",
+      "title": "Ethical Storytelling: Keeping Your Visuals on the Right Side of Truth",
+      "abstract": "Have you ever seen a headline that felt shocking, urgent, or even scary, only to discover that once you dug into the data, the story didn’t quite hold up? That moment of realisation is where ethics in storytelling begin.\nThis session explores how sampling bias and the framing effect quietly shape data stories, often without malicious intent, yet with very real consequences. You’ll see how technically “correct” data can still distort understanding, steer decisions, and undermine trust through what’s included, what’s excluded, and how the narrative is constructed.\nWe then turn to responsibility. Using real examples, we’ll look at how to surface data limitations, avoid manipulative framing and headlines, and design visualisations that inform rather than mislead. You’ll leave with practical techniques for keeping your visuals on the right side of truth.\nIf you care about trust, integrity, and the real‑world impact of your data stories, this session will change how you design them.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-158383",
+      "title": "Ethos, Pathos & Logos: Aristotle’s Lesson for Ethical Data Design",
+      "abstract": "Dashboards are designed to support decision-making, yet many still create confusion instead of clarity. Users question whether they can trust the data, struggle to interpret what they are seeing, or are unintentionally excluded by inaccessible and overly complex designs. When this happens, even technically correct reports can fail to drive meaningful action.\nThis session explores how a 2,000-year-old framework from Aristotle can help solve these modern data communication challenges through the principles of Ethos (credibility), Logos (logic), and Pathos (emotion).\nUsing real examples, attendees will learn how ethical and transparent design choices strengthen trust in reporting (Ethos), how cognitive and perceptual design principles improve clarity and understanding (Logos), and how accessibility and empathy-driven design create more inclusive experiences that work for a wider audience (Pathos).",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-173366",
+      "title": "Crossing Oceans and Recoding Careers: How to Rebuild Your Professional Identity in a New Country",
+      "abstract": "Relocating to a new country can reset your career overnight. Qualifications may not translate, professional networks disappear, confidence can be shaken by language barriers, and cultural expectations around work often differ more than anticipated. Many skilled professionals find themselves starting again from zero, regardless of prior experience.\nThis session explores how to intentionally rebuild a professional identity after international relocation and career transition. Through our journey of moving countries and transitioning into roles centred on Microsoft applications, we will share practical strategies for navigating cultural adjustment, repositioning existing expertise, and building credibility in a competitive job market.\nAttendees will learn how to identify transferable strengths, communicate value in a new professional context, approach networking without an established circle, and manage the mindset challenges that often accompany reinvention. Whether you are considering an international move, changing industries, or supporting diverse talent within your organisation, this session provides realistic insights and actionable approaches to help you adapt and progress with confidence.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-173365",
+      "title": "Accidental Data Lies: Avoiding Misleading Visuals in Power BI",
+      "abstract": "Not all misleading charts are intentional. Often, they’re the result of small visual design decisions that unintentionally distort how data is interpreted.\nIn this session, we’ll explore real-world examples of misleading charts from media, public reports, and widely shared graphics. From pie chart overload to truncated axes, confusing colour choices, and questionable scales, we’ll examine how seemingly innocent visuals can change the story data appears to tell.\nUsing these examples as a starting point, we’ll translate the lessons into practical guidance for developers working with Power BI. We’ll look at how chart selection, scale configuration, colour usage, and layout decisions can influence interpretation, and how to design visuals that communicate clearly and responsibly.\nWe’ll also touch on concepts such as framing effects and sampling bias, exploring how cognitive and visual factors combine to shape the narratives audiences take away from data.\nBy the end of this session, you’ll have sharper instincts for spotting misleading visuals and practical techniques to ensure your Power BI reports support clear, trustworthy insights.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-168174",
+      "title": "POURing Accessibility into Power BI: Practical Steps for Inclusive Analytics",
+      "abstract": "Many organisations focus on accessibility for websites, but overlook Power BI, even though reports used for decisions, risk, and performance are digital products too.\nIf people can’t access them, they’re excluded. My perspective is shaped by experience: after a work injury caused nerve damage, a simple hardware change transformed my ability to work and reframed accessibility as essential, not optional.\nThis session introduces the Web Content Accessibility Guidelines (WCAG), which define global standards for digital accessibility, and explains how their POUR principles (Perceivable, Operable, Understandable and Robust), translate directly into practical Power BI design choices. We also explore how AI/DAX/UDF can generate meaningful alternative text for visuals, improving accuracy and reducing manual effort.\nAttendees will leave with clear, repeatable methods to make Power BI reports more inclusive, usable, and compliant by design.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-153246",
+      "title": "You Are Not Your Job: Building a Purpose-Driven Personal Brand with Ikigai",
+      "abstract": "In a tech industry that often equates success with titles, certifications, and technical mastery, it’s easy to lose sight of what truly defines our value. Our worth isn’t in the job title we hold, it’s in the work we’re meant to do.\nIn this session, I’ll share how the Japanese concept of Ikigai, meaning “reason for being”, reshaped my approach to personal branding. From navigating a career crisis to becoming an international speaker and STEM changemaker, I’ll walk you through how aligning with purpose transformed my visibility, impact, and career direction.\nTogether, we’ll explore how to build a personal brand rooted in authenticity, values, and intentional action. Through the lens of Ikigai, you’ll learn how to:\n1. Distinguish your “job” from your deeper “work”\n2. Align your passions, strengths, and purpose with what the world truly needs\n3. Launch side hustles that energise your spirit, not just your income\n4. Attract opportunities by living your brand, not chasing recognition\nWhether you’re just starting out or redefining your path, this session offers practical strategies, reflective prompts, and real-world examples to help you build a brand that resonates, because when you live your Ikigai, your impact speaks for itself.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-162258",
+      "title": "Beyond Red, Amber, Green: Building Colour-Accessible Dashboards",
+      "abstract": "Raise your hand if you rely on red, amber, and green (RAG) to report performance and progress…\nNow imagine discovering, as I once did, that a colour-blind user had spent six months quietly struggling to make sense of a dashboard, simply because the colours told a story he couldn’t see.\nFor millions of people with colour-blindness, those familiar RAG visuals can blur into a single message, or no message at all.\nIn this session, we’ll explore how to move beyond traffic-light reporting to create dashboards everyone can read and act on. You’ll learn how to apply WCAG contrast principles, introduce accessible colour themes (including a Power BI colour-mode toggle), and strike the right balance between brand guidelines and usability.\nWalk away with practical techniques to build colour-accessible dashboards that inform, include, and genuinely empower every user.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-159284",
+      "title": "Blink First, Think Later: Designing Power BI Report for Human Instincts",
+      "abstract": "Before users analyse your data, they blink, scan, and make snap judgements.\nThis session is about designing Power BI dashboards for that split second of human instinct. You’ll learn how layout, spacing, and visual hierarchy guide attention before logic kicks in, and how accessibility plays a key role in making insights discoverable, not hidden.\nExpect real-world examples, quick wins, and design techniques you can apply immediately to help users find what matters without being told where to look.",
+      "speakerIds": [
+        "juliana-smith"
+      ]
+    },
+    {
+      "id": "sessionize-173732",
+      "title": "The Hidden Work Behind Great Power BI Reports",
+      "abstract": "A lot of Power BI reports start in the same place: with data, visuals, and a blank canvas. But the reports that actually get used, the ones that influence decisions, tend to start somewhere else entirely: with a clear question.\nIn this session, I’ll share a practical, end-to-end way of thinking about Power BI reporting, shaped by hands-on experience delivering solutions and supporting colleagues, after seeing the expected, the unexpected, and a few “how did we get here?” moments along the way.\nWe’ll walk through a simple flow behind a successful report: understanding the problem and the audience, preparing the right data, structuring it properly, building meaningful calculations, and designing with purpose. Along the way, we’ll focus on something most of us have experienced, how reports grow beyond their original intent, and how to prevent that from happening by keeping scope clear and decisions front and centre.\nBeyond the build itself, we’ll touch on the elements that make reporting sustainable: keeping outputs focused, maintaining consistency, and allowing reports to evolve in a controlled way rather than trying to do everything at once.\nThe aim is simple: to help you move from building reports that look good to creating ones that stay focused, stay useful, and actually support decisions.",
+      "speakerIds": [
+        "juliana-smith"
       ]
     }
   ]
