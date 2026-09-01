@@ -1248,6 +1248,54 @@
       "speakerIds": [
         "juliana-smith"
       ]
+    },
+    {
+      "id": "sessionize-185954",
+      "title": "Playing with Translytical Task Flows",
+      "abstract": "Microsoft's Translytical Task Flows in Power BI are a game-changer for building dynamic, interactive solutions that transcend traditional reporting. In this session, we'll learn about Translytical Task Flows, seeing how they can be use to make a fully functional Sudoku game directly within Power BI. Leveraging the full power of Microsoft Fabric for game state management.\nAttendees will gain hands-on insights into:\n• Implementing Translytical Task Flows to trigger Python UDFs from Power BI buttons.\n• Designing and creating a robust Fabric SQL database schema to manage complex application state (e.g., game progress, pencil marks).\n• Using SQL stored procedures as APIs for data manipulation (e.g., initializing games, setting cell values, toggling pencil marks).\n• Developing Python UDFs to act as the bridge between Power BI and backend SQL procedures, including error handling and response formatting.\n• Advanced Power BI report design techniques for highly interactive experiences, including using button slicers for grid interaction and SVG measures for dynamic cell rendering.\n• Implementing Row Level Security (RLS) to provide personalized experiences for multiple users.\nThis session will move beyond theoretical concepts, providing practical code examples and architectural blueprints for how you can apply these cutting-edge Fabric capabilities to build sophisticated, interactive solutions, whether for playful applications like a Sudoku game or complex enterprise-level data entry and workflow management systems.",
+      "speakerIds": [
+        "jake-duddy"
+      ]
+    },
+    {
+      "id": "sessionize-185953",
+      "title": "Graphs in Power BI",
+      "abstract": "Traditional Power BI visuals excel at showing hierarchies and aggregates, but often fall short when it comes to visualizing complex relationships and networks. This session dives deep into practical strategies for creating compelling graph visualizations directly within Power BI, moving beyond the limitations of standard visuals. Leveraging the power of Deneb, we'll demonstrate how to structure your data effectively for graph representation and build interactive force-directed layouts that reveal hidden connections in your data. We'll also explore how to leverage Direct Query and dynamic M parameters to use Graph databases as a data source to improve sub-graph generation.\nWhat You Will Learn:\n• Best practices for modeling and preparing relational data for graph visualization in Power BI.\n• How to use Deneb to create dynamic and interactive force-directed graph layouts.\n• How to use Graph Databases as a data source for Graph visualization in Power BI",
+      "speakerIds": [
+        "jake-duddy"
+      ]
+    },
+    {
+      "id": "sessionize-185952",
+      "title": "Fabric-CICD: From Click Ops to DevOps",
+      "abstract": "Fabric-cicd, is a open source Python library designed to streamline Continuous Deployment workflows within Microsoft Fabric. It offers a clean abstraction on top of the on top of the Fabric APIs allowing you to easily deploy your Source Controlled Fabric items. In this session you will learn how to setup your first pipeline and strategies for Fabric deployments.",
+      "speakerIds": [
+        "jake-duddy"
+      ]
+    },
+    {
+      "id": "sessionize-185951",
+      "title": "DAX User Defined Functions",
+      "abstract": "Intro to DAX UDFs and DAXLib.org",
+      "speakerIds": [
+        "jake-duddy"
+      ]
+    },
+    {
+      "id": "sessionize-185950",
+      "title": "DaxLib.SVG: A DAX UDF Library for creating SVGs",
+      "abstract": "In this session, you'll learn how to install and use DaxLib.SVG – an open-source DAX UDF library that makes adding advanced data-driven SVG visuals to your report simple.\nCreating data-driven SVGs can be intimidating and time consuming. DaxLib.SVG can be installed in a couple of clicks, and you can make your report go from standard to stunning in a couple of minutes.\nDaxLib.SVG offers violin plots for distribution analysis, heatmaps for pattern detection, custom sparklines and more, and can be integrate seamlessly into slicers, tables and matrixes.",
+      "speakerIds": [
+        "jake-duddy"
+      ]
+    },
+    {
+      "id": "sessionize-185949",
+      "title": "DAXLib: Zero to community hero",
+      "abstract": "Turn your DAX UDFs into community assets! We’ll start small, using a basic fork-and-pull-request to publish your first library to DaxLib. Next, we’ll scale up to the Medium/Large workflow using a dedicated GitHub repo. You'll learn the benefits of this approach (like better collaboration and issue tracking) and how to set up essential pro developer practices, including unit testing and using static site generator for documentation sites. Master the start-to-finish process of sharing your custom DAX!",
+      "speakerIds": [
+        "jake-duddy"
+      ]
     }
   ]
 }
