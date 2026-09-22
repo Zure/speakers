@@ -530,7 +530,7 @@
     {
       "id": "sessionize-152392",
       "title": "This title was written by AI — and that’s only the beginning",
-      "abstract": "What happens when you let AI write your code, your posts, and your plans? Only one way to find out.\nIn this talk, I share what happened when I let AI take over my workflow: writing full coding projects, managing my LinkedIn presence, scheduling my time, creating videos, and even teaching me new frameworks.\nFrom hallucinated pull requests to surprisingly useful insights, each experiment revealed how much (and how little) we can delegate to machines. I will tell you my experiences and if I could have predicted them beforehand. You’ll leave with real examples, honest takeaways, and a new sense of how you can let AI help shape your life, without losing the human logic behind it.",
+      "abstract": "What happens when you let AI write your code, your posts, and your plans? In this talk I share what happened when I put AI to work across everything: shipping apps to production, managing my LinkedIn presence, automating my planning, learning new frameworks.\nEach experiment showed the same pattern: AI gives back exactly as much as you put into managing it. I will tell you what worked, what failed, and how you can improve your own results based on my lessons learned.\nYou'll leave with real examples, an honest cost/benefit breakdown, and a clear sense of how to get more value out of your artificial friend, without losing the human logic behind it.",
       "speakerIds": [
         "barbara-forbes"
       ]
@@ -1043,7 +1043,7 @@
     {
       "id": "sessionize-180836",
       "title": "Azure Policy as Code: Lessons from the Field",
-      "abstract": "In this session, I take you through everything I learned building a fully automated Azure Policy deployment. We start at the basics: what the Azure Policy structure actually looks like, and what building blocks are available to you. From there we go into Infrastructure as Code, and how you turn those building blocks into something that's actually yours: definitions, assignments, exemptions, all deployed and managed through code instead of clicked together by hand.\nThen, let's talk about all the things I didn't see coming. The assumptions that turned out wrong, the parts I had to rebuild, the design choices that looked fine until they didn't. You get the mistakes so you don't have to make them yourself.\nBy the end of this session, you'll have a clear blueprint for automating Azure Policy in your own Landing Zone, and you'll know exactly which pitfalls to avoid.\nShould you automate your policy setup? Absolutely, it's worth it. This session just saves you the time I spent finding that out the hard way.",
+      "abstract": "Azure Policy as Code: Lessons from the Field\nI built a fully automated Azure Policy deployment. This is everything I learned, including the parts I would rather not have.\nWe start with the structure and the building blocks. From there we go into Infrastructure as Code, and how you turn those building blocks into something that's actually yours: definitions, assignments, exemptions, all deployed and managed through code\nThen the things I did not see coming. The assumptions that turned out wrong. The parts I had to rebuild. The design choices that looked fine right up until they didn't.\nThen, let's talk about all the things I didn't see coming. The assumptions that turned out wrong, the parts I had to rebuild, the design choices that looked fine until they didn't. You get the mistakes so you don't have to make them yourself.\nYou leave with a blueprint for your own landing zone, and the decisions to make before you write a line of it, because there are some issues you might not have seen coming",
       "speakerIds": [
         "barbara-forbes"
       ]
@@ -1051,7 +1051,7 @@
     {
       "id": "sessionize-168120",
       "title": "Trust, don't store: how WIF changes your deployment security",
-      "abstract": "Does your deployment pipeline authenticate with a client secret? Then this session is for you. In the best case scenario, secrets live in a vault, get rotated on a schedule nobody loves, and occasionally expire at exactly the wrong moment. In the worst case they are stored somewhere unsecured or never rotate at all. Let's take away the risk with a far better option.\nWorkload Identity Federation replaces stored credentials with a trust relationship. No secrets that can leak, no expiration at the wrong time, nothing stored outside of Azure.\nIn this session we'll explore the systems behind WIF and OpenID Connect and how the two relate. We set up WIF from scratch in both GitHub Actions and Azure DevOps, connecting to Azure. You'll see how the trust model works and what configuration is important. We'll also cover the current limitations and what that means for your specific setup.\nBy the end you will understand exactly how WIF works, have the steps to migrate your existing pipelines and a clear answer if anyone asks you if WIF is the most secure form of authentication",
+      "abstract": "Does your deployment pipeline still authenticate with a client secret? In the best case it lives in a vault and rotates on a schedule nobody loves. In the worst case they are stored somewhere unsecured and nobody has touched them since 2021.\nWorkload Identity Federation replaces that secret with a trust relationship. Nothing to leak, nothing to rotate, nothing stored outside Azure.\nIn this session we'll explore the systems behind WIF and OpenID Connect and how the two relate. We set up WIF from scratch in both GitHub Actions and Azure DevOps, and go through the limitations that decide whether it works for you. You leave with a migration path and a clear answer if anyone asks you if WIF is the most secure form of authentication",
       "speakerIds": [
         "barbara-forbes"
       ]
@@ -1059,7 +1059,7 @@
     {
       "id": "sessionize-168119",
       "title": "One Size Fits None: Make Azure best practices work for your organization",
-      "abstract": "The Microsoft Cloud Adoption Framework promises a solid foundation. Azure Verified Modules promise consistent, reusable infrastructure. The Azure Security Benchmark will make sure your resources are protected and secured. And they deliver, but not without making them your own.\nWith flexibility comes complexity. In this session we look at where Microsoft Azure best practices are strong, and where they might start working against you. Not because they are wrong, but because the average company is hard to find. We look through what the standards are and why they will or will not work for you. Maybe your company doesn't need the flexibility of AVM, which can be a pain to update. Maybe developers at your company don't want the freedom that comes with the Cloud Adoption Framework. And some policies in the Azure Security Benchmark can actually block built-in Azure resources. With these and more examples from the field we will pinpoint how you can make these standards work for your company. You will walk away with a clearer vision on what to adopt and what to adapt.",
+      "abstract": "Defaults like the Cloud Adoption Framework, Azure Verified Modules and the Azure Security Benchmark all deliver. Just not straight out of the box. The problem is that Microsoft's guidance is written for the average company, and the average company is hard to find.\nWe look through what the standards are and why they will or will not work for you. Maybe your company doesn't need the flexibility of AVM, which can be a pain to update. The Cloud Adoption Framework gives developers a freedom plenty of organizations do not actually want. And some Security Benchmark policies will happily block built-in Azure resources.\nNone of these standards are wrong. They are written for someone else. You leave knowing which parts to adopt, which to adapt, and which to leave alone.",
       "speakerIds": [
         "barbara-forbes"
       ]
@@ -1302,6 +1302,46 @@
       "abstract": "Turn your DAX UDFs into community assets! We’ll start small, using a basic fork-and-pull-request to publish your first library to DaxLib. Next, we’ll scale up to the Medium/Large workflow using a dedicated GitHub repo. You'll learn the benefits of this approach (like better collaboration and issue tracking) and how to set up essential pro developer practices, including unit testing and using static site generator for documentation sites. Master the start-to-finish process of sharing your custom DAX!",
       "speakerIds": [
         "jake-duddy"
+      ]
+    },
+    {
+      "id": "sessionize-188253",
+      "title": "AI tools for the Azure Engineer",
+      "abstract": "A deployment failed for reasons the error message is not sharing. Someone needs a policy exemption explained in writing. There is a Bicep pull request waiting. And finance wants to know why the bill went up. How can AI tools simplify your daily tasks?\nIn this session, we'll explore the best tools to improve your workflow. Discover which ones live up to the hype and can truly make your job easier.\nJoin me to learn about Copilot for Azure, GitHub Copilot, the browser assistants, Claude Code, and whichever of their relatives still matter by the time I present this. . Through examples and demos we find use cases, risks, costs, benefits and tips on how to make the most of AI in your everyday work.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
+    },
+    {
+      "id": "sessionize-188284",
+      "title": "Your secure score is lying to you",
+      "abstract": "Defender for Cloud gives you a number that I can predict two things about: It will not be 100, and someone will eventually ask why.\nLet's talk about other strange findings, like how Defender produces recommendations faster than any team can act on them, charges per plan and per resource type, and runs on the same policy engine you already use for governance. How do you make it work for you? We cover what it gives you beyond a list of findings, which plans earn what they cost, which recommendations to deliberately dismiss, and how to record that decision so it survives an audit.\nYou leave able to decide what to switch on, what to ignore on purpose, and how to explain both.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
+    },
+    {
+      "id": "sessionize-188287",
+      "title": "Paying by the token: how to regain control over AI spending",
+      "abstract": "AI used to feel free. Pay a monthly fee, run everything in Opus, never think about it again.\nThat ended. In June 2026 GitHub Copilot stopped charging per request and started charging per token. Claude started working with sessions. These changes left us with a paradox: you pay for the tokens the model spends thinking, and you cannot see or control how many that is.\nLets talk about our options. Let's talk about how to optimize our input and instructions, how caching and context windows work and the difference a model really makes.\nCoding agents will never be as cheap as they were, but you will leave able to cut the bill without cutting what you get out of it.",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
+    },
+    {
+      "id": "sessionize-188289",
+      "title": "Your app has no MFA: securing managed identities and service principals in Azure",
+      "abstract": "Your pipeline has no MFA. Your app cannot approve anything. For people you constrain who gets in, and you have plenty of tools to do it with. For a workload there is nobody to ask, so all you have left is what the identity is, what it can reach, how long its credential lives, and whether it needs a credential at all.\nLet's walk through the options. Managed identity or federated credential. System-assigned or user-assigned. Contributor or Owner, and at what scope should that land? Least privilege sounds great, but it is not always the most practical answer, or even the most secure one, and I will show you where it falls apart.\nThis is a part of Azure access that is ignored far to often. You will leave with a decision tree and practical tips to improve. The more secure option might actually be easier to maintain",
+      "speakerIds": [
+        "barbara-forbes"
+      ]
+    },
+    {
+      "id": "sessionize-188295",
+      "title": "Choose Your Own Adventure: Finding the Right Harness for GitHub Copilot",
+      "abstract": "GitHub Copilot is no longer one tool. It's a chat panel, a scriptable CLI, a background agent, and an editor-native agent mode, four different working styles built on the same model. Step outside GitHub's ecosystem and open source agents like opencode make the choice even harder.\nIn this session, we will see them all. What are their benefits? Which harness fits which job? Are you missing out if you don't use them all? You will leave with a decision framework to find out what harness might be best for the job, but most importantly: what works best for you.",
+      "speakerIds": [
+        "barbara-forbes"
       ]
     }
   ]
