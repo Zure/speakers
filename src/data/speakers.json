@@ -139,6 +139,13 @@
       "title": "CEO at Zure Finland, Microsoft Regional Director",
       "bio": "Jouni is a 30+ year veteran of the Microsoft ecosystem, with roles spanning software development, digitalization project management and cloud architecture. Lately, he has been focusing on understanding the business and leadership questions around AI adoption.\nFor his day job, Jouni is the CEO of Zure Finland, helping a 100-strong group of consultants deliver the best digitalization possible. Jouni is also the co-host and producer of the Finnish Ikkunastudio podcast and a Microsoft Regional Director.",
       "photo": "https://cdn.sessionize.com/image/cb06-400o400o2-Dawx54i1FQHDZVVmh7rJYt.jpg"
+    },
+    {
+      "id": "johnny-hooyberghs",
+      "name": "Johnny Hooyberghs",
+      "title": "Azure Architect at Zure and Microsoft MVP",
+      "bio": "Johnny Hooyberghs is an Azure architect for Zure since 2026 focusing on software and cloud architecture, backend development and a Microsoft Most Valuable Professional for Azure and Developer Technologies since 2020. Prior to joining Involved as a consultant, he has had experience as a consultant since 2014 and developing software for the health-care sector since 2008. Johnny has been passionate about software development using the .NET stack, cloud native development using the Microsoft Azure cloud stack and quantum computing. Johnny has spent 10 years of his free time teaching software development courses for the adult education institute CVO Antwerpen and has been enjoying public speaking these past 6 years. When Johnny is not working, he likes to spend his time on self-education, quantum computing, some casual video gaming, travelling the world and visiting as many theme parks as possible.",
+      "photo": "https://cdn.sessionize.com/image/6669-400o400o2-UU6vZJwdw5BwAUoYZ5zJM3.jpg"
     }
   ],
   "sessions": [
@@ -1350,6 +1357,54 @@
       "abstract": "What happens when you build software with AI in front of an audience?\nIn this live session, we’ll ideate with the room and turn an idea into a working solution using AI-assisted development practices.\nGetting AI to produce code is the easy part. The engineering challenge is getting it to build the right thing, to work effectively inside a codebase, verify its own work, and keep the solution reliable as it evolves.\nWe’ll tackle those problems using techniques such as Spec-Driven Development, context engineering, harness engineering, AI-assisted Test-Driven Development, and agentic development. We’ll use specifications to capture intent and constraints, engineer the context available to the AI, structure how agents plan and execute work, and use tests and automated verification to close the feedback loop.\nRather than treating these as separate methodologies, we’ll see how they fit together into a practical AI development workflow, from idea to specs and context to implementation and testing.\nThis is not a polished demo. We’ll build something live, make decisions as we go, inspect what the AI produces, and deal with the problems that emerge.\nYou will leave with practical patterns for structuring AI-assisted development: how to give AI enough context and constraints to work effectively, how to create feedback loops that catch mistakes, and how to move from “AI that writes code” toward AI that can reliably participate in software engineering.",
       "speakerIds": [
         "sakari-nahi"
+      ]
+    },
+    {
+      "id": "sessionize-151586",
+      "title": "Get familiar with Microsoft quantum computing for developers",
+      "abstract": "A century ago, quantum mechanics, pioneered by legendary physicists like Heisenberg, Einstein, Bohr and many others, revolutionized our understanding of the universe.\nThirty years ago, it sparked the idea of using quantum mechanics to build a new kind of computer: a quantum computer.\nIn just the last five years, we've begun building real physical (though still on a small scale) quantum computers.\nNow it's your turn to step into this exciting frontier! You can join Johnny for a hands-on session where you'll learn the fundamentals of quantum computing logic and program quantum computers using Microsoft's quantum language: Q#.\nYou'll get a theoretical introduction on quantum computing, after which you'll be able to learn about quantum computing logic while working on small programming challenges, guided by Johnny and a custom Quantum Computing CoPilot.\nThe only thing you need is a laptop with Visual Studio Code and the Azure Quantum Development Kit extension installed.",
+      "speakerIds": [
+        "johnny-hooyberghs"
+      ]
+    },
+    {
+      "id": "sessionize-129902",
+      "title": "Enable GenAI in your applications using .NET, Azure and the Microsoft Agent Framework",
+      "abstract": "How many AI agents and LLM's does it take to change a lightbulb?\nLLM's are a very hot topic right now, but can we use them in a real business scenario?\nThanks to the open-source SDK called Microsoft Agent Framework, you can seamlessly integrate an LLM-based AI with your own code to perform more complex tasks like sending emails, updating databases, ordering tickets, and much more...\nWith the Agent Framework, you can leverage the same AI orchestration patterns that power Microsoft's Copilots in your own applications.\nIn this session, Johnny will explain the concepts and prove them using demos on a number of fun personal applications where he added a copilot using the Microsoft Agent Framework, Azure AI Foundry, Azure OpenAI and Azure Cognitive Services.",
+      "speakerIds": [
+        "johnny-hooyberghs"
+      ]
+    },
+    {
+      "id": "sessionize-103241",
+      "title": "What is new in .NET and C#?",
+      "abstract": "November 2025 marked the release of .NET 10 and C# 14. In this session, I will talk about what is new in the latest version of .NET and what the future will bring for the .NET platform in general. Expect a number of new .NET 10 and C# 14 features and examples of those features.",
+      "speakerIds": [
+        "johnny-hooyberghs"
+      ]
+    },
+    {
+      "id": "sessionize-53858",
+      "title": "Creating a quantum algorithm using Microsoft Q#",
+      "abstract": "In the last decade, there has been a lot of talk about quantum computing. A few years ago, Microsoft has released their preview of Azure Quantum. So today, you cannot only write quantum programs on a simulated environment with Q#, but you can also target a physical quantum computer on Azure Quantum.\nIn this session, I will introduce quantum computing and guide you through the implementation of an existing quantum algorithm, step by step, while I explain all the details. This will be a very intense, technical, fun, and code-heavy session.",
+      "speakerIds": [
+        "johnny-hooyberghs"
+      ]
+    },
+    {
+      "id": "sessionize-103240",
+      "title": "Goodbye Azure Kubernetes Service! Hello Azure Container Apps!",
+      "abstract": "You have decided to run your cloud-native applications using containers? But how will you deploy these containers to Azure Cloud?\nAKS or Azure Kubernetes Service is very popular, but also adds a lot of complexity to setting-up and deploying your infrastructure!\nACI or Azure Container Instances are very easy to setup, but don't offer you enough flexibility?\nACA or Azure Container Apps are Microsoft Azure's new serverless container offering, built as an abstraction on top of AKS, and could be the solution to your question!\nIn this session I will introduce you to Azure Container Apps and compare it to AKS and ACI and guide you through setting-up a multi-container app using Azure Container App container environments.",
+      "speakerIds": [
+        "johnny-hooyberghs"
+      ]
+    },
+    {
+      "id": "sessionize-160463",
+      "title": "Beyond No Return: Preparing Your Organization for Cyber War",
+      "abstract": "Amidst global uncertainty, the distinction between day-today cybercrime and state-sponsored cyber warfare is getting blurry. What will happen if your organization gets caught in the crossfire - or the crosshairs?\nDrawing on principles from conventional warfare and national-level cyber defense, this session breaks down how to survive when the stakes are at the highest.\nKey takeaways:\n- Learn to apply the CARVER model to your organizational assets to see through the eyes of the attacker, so you can prioritize resources where they matter the most.\n- Using honeytokens, tarpits and other digital landmines to turn your environment into a high-cost, high-risk nightmare for attackers.\n- How to maintain operational security in a modern world where everything is in the cloud.",
+      "speakerIds": [
+        "miska-kyto"
       ]
     }
   ]
