@@ -1406,6 +1406,14 @@
       "speakerIds": [
         "miska-kyto"
       ]
+    },
+    {
+      "id": "sessionize-192828",
+      "title": "Live: Engineering with AI (developers are stronger than ever)",
+      "abstract": "Vibe coding is not engineering. One-shotting a prototype is not production. Random prompts don't make an expert, and they get expensive in the hands of amateurs, when some of the best devs I know burn more than € 20 000 monthly in tokens.\nGetting AI to write code is the easy part. The hard part is getting it to build the right thing, check its own work, and keep the result reliable without letting the context and the costs run away. That is engineering again, and it's where we thrive.\nIn this session, we'll build things with AI agents while walking through the lifecycle of AI software development: spec, implement, QA and deploy. We look at different harnesses, skill packs and ways of building solutions with AI, and at how spec-driven development, context engineering, harness engineering and TDD work together as one coherent practice that replaces one-shot prompting with repeatable workflows.\nYou'll leave with practical patterns for:\n• replacing \"prompt and pray\" with specs, constraints and repeatable workflows\n• building harnesses and feedback loops that catch AI mistakes before they reach main\n• keeping context and cost under control while the agents do more of the work",
+      "speakerIds": [
+        "sakari-nahi"
+      ]
     }
   ]
 }
