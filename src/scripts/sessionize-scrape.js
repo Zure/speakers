@@ -319,6 +319,29 @@ async function main() {
 
   data.speakers = keptSpeakers
 
+  // Prune speakers no longer listed in the Sessionize directory, and sessions
+  // left without speakers. Skip when the directory came back empty to avoid
+  // wiping the dataset on a broken or changed directory page.
+  if (dirSpeakers.length > 0) {
+    const scrapedIds = new Set([...profileUrlToSpeakerId.values()].map(id => idRemap.get(id) || id))
+    const removedSpeakers = data.speakers.filter(s => !scrapedIds.has(s.id))
+    if (removedSpeakers.length > 0) {
+      data.speakers = data.speakers.filter(s => scrapedIds.has(s.id))
+      for (const session of data.sessions) {
+        if (!Array.isArray(session.speakerIds)) continue
+        session.speakerIds = session.speakerIds.filter(sid => scrapedIds.has(sid))
+      }
+      const sessionCount = data.sessions.length
+      data.sessions = data.sessions.filter(s => Array.isArray(s.speakerIds) && s.speakerIds.length > 0)
+      process.stdout.write(
+        `Removed ${removedSpeakers.length} speaker(s) no longer on Sessionize: ${removedSpeakers.map(s => s.name).join(', ')}\n` +
+          `Removed ${sessionCount - data.sessions.length} session(s) without remaining speakers\n`
+      )
+    }
+  } else {
+    process.stdout.write('Directory returned no speakers; skipping removal of stale speakers\n')
+  }
+
   await fs.mkdir(path.dirname(outAbs), { recursive: true })
   await fs.writeFile(outAbs, JSON.stringify(data, null, 2) + '\n', 'utf8')
   process.stdout.write(`Wrote: ${path.relative(process.cwd(), outAbs)}\n`)
