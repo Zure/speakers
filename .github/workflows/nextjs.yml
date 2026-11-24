@@ -2,7 +2,7 @@ name: Deploy to Azure Static Web Apps
 
 on:
   push:
-    branches: ["**"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -11,6 +11,8 @@ permissions:
 
 jobs:
   deploy:
+    # Azure OIDC federated credential only trusts the main branch.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -53,15 +55,6 @@ jobs:
 
       - name: Deploy to Azure Static Web Apps
         run: |
-          if [ "${GITHUB_REF_NAME}" = "main" ]; then
-            echo "Deploying to production environment..."
-            swa deploy "./src/out" \
-              --deployment-token "${{ env.SWA_DEPLOYMENT_TOKEN }}" \
-              --env production
-          else
-            env_name=$(echo "${GITHUB_REF_NAME}" | tr '/_' '-')
-            echo "Deploying to environment: ${env_name}..."
-            swa deploy "./src/out" \
-              --deployment-token "${{ env.SWA_DEPLOYMENT_TOKEN }}" \
-              --env "${env_name}"
-          fi
+          swa deploy "./src/out" \
+            --deployment-token "${{ env.SWA_DEPLOYMENT_TOKEN }}" \
+            --env production
